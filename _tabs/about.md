@@ -31,4 +31,4 @@ My goal is to make exceptional mobile Apps with high emphasis on Android Develop
 ##### 🎓 Education:
 🔹 Bachelor's Degree in Computer Science
 
-####  Please feel free to contact me anytime if you want to get in touch:)
+Please feel free to contact me anytime if you want to get in touch:)
