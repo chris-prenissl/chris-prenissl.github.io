@@ -29,6 +29,7 @@ My goal is to make exceptional mobile Apps with high emphasis on Android Develop
  💬Teamwork: Scrum, multi professional team
 
 ##### 🎓 Education:
+🔹 Nurse
 🔹 Bachelor's Degree in Computer Science
 
 Please feel free to contact me anytime if you want to get in touch:)
