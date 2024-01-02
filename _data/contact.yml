@@ -1,19 +1,23 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
-
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: github
+  icon: "fab fa-github"
+
+- type: threads
+  icon: "fab fa-threads"
+
 - type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/christoph-prenissl-50b007213'                  # Fill with your Linkedin homepage
+  icon: 'fab fa-linkedin'
+  url:  'https://www.linkedin.com/in/christoph-prenissl-50b007213'
 
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
