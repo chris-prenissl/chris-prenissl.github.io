@@ -8,11 +8,10 @@ This blog is about Mobile Development, especially Android Development.
 It will cover everything from setting up environments to personal developer experiences.
 
 ## About me
-### Android Developer | Software Engineer | Team Player
 
 👋 Hello, I'm Chris:)
 
-My goal is to make exceptional mobile Apps with an Android Development background.
+My goal is to make exceptional mobile Apps and help with Development.
 
 #### Experience
 - Android Developer at Bertrandt  
