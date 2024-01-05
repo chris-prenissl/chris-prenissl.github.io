@@ -34,7 +34,8 @@
                 padding-bottom:.3em
             }
             .alert{
-                background:#fff5b1;
+                background:#e685b5;
+                color: #dee2e6;
                 padding:4px 12px;
                 margin:0 -12px
             }
