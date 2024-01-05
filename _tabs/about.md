@@ -4,17 +4,16 @@ order: 4
 ---
 
 ## About this Blog
-This blog is about Mobile Development, especially Android Development.
-It will cover everything from setting up environments to personal developer experiences.
+If you feel excitement when you think about what Mobile Development and the possibilities at provides, you are at the right spot.
 
 ## About me
 
 👋 Hello, I'm Chris:)
 
-My goal is to make exceptional mobile Apps and help with Development.
+My goal is to make exceptional mobile Apps and help with everything related to Development.
 
 #### Experience
-- Android Developer at Bertrandt  
+- Android Developer at Bertrandt (current position) 
 - Android Development Internship at Continental  
 - Unity Developer at Celrage 
 - Hygiene Companion Android App as Bachelor Thesis for University Clinic of Regensburg
