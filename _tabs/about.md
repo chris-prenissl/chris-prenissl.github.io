@@ -1,26 +1,30 @@
 ---
-# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
 
-#### Android Developer | Software Engineer | Team Player
+## About this Blog
+This blog is about Mobile Development, especially Android Development.
+It will cover everything from setting up environments to personal developer experiences.
+
+## About me
+### Android Developer | Software Engineer | Team Player
 
 👋 Hello, I'm Chris:)
 
-My goal is to make exceptional mobile Apps with high emphasis on Android Development.
+My goal is to make exceptional mobile Apps with an Android Development background.
 
-##### Experience:
-🔹 Android Developer at Bertrandt  
-🔹 Android Development Internship at Continental  
-🔹 Unity Developer at Celrage  
-🔹 Hygiene Companion Android App as Bachelor Thesis for University Clinic of Regensburg
+#### Experience
+- Android Developer at Bertrandt  
+- Android Development Internship at Continental  
+- Unity Developer at Celrage 
+- Hygiene Companion Android App as Bachelor Thesis for University Clinic of Regensburg
 
-##### Tutoring:
-🔹 Mathematics 2 Tutor at OTH Regensburg  
-🔹 Programming Course Tutor at OTH Regensburg  
+#### Tutoring
+- Mathematics 2 Tutor at OTH Regensburg  
+- Programming Course Tutor at OTH Regensburg  
 
-##### Key Skills:
+#### Key Skills
  📲 Android Development: Kotlin, Java  
  📲 Mobile Development: Flutter, iOS  
  🛰️ CI/CD: Jenkins, Atlassian Suite, App-Distribution, Analytics  
@@ -28,8 +32,15 @@ My goal is to make exceptional mobile Apps with high emphasis on Android Develop
  🎮 Unity: C#, Custom Editor Tooling  
  💬Teamwork: Scrum, multi professional team
 
-##### 🎓 Education:
-🔹 Nurse
-🔹 Bachelor's Degree in Computer Science
+#### 🎓 Education
+- Nurse
+- Bachelor's Degree in Computer Science
 
 Please feel free to contact me anytime if you want to get in touch:)
+
+#### Social Links
+
+- [Mail](mailto:christophprenissl@gmail.com)
+- [Github](https://github.com/chris-prenissl)
+- [Threads](https://www.threads.net/@chris_snakept)
+- [LinkedIn](https://www.linkedin.com/in/christoph-prenissl-50b007213)
