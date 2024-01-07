@@ -14,7 +14,7 @@ the Android Operating System please refer to [Android Open Source Project](https
 
 ## Technical Requirements
 The most technical expansive tool for Android Development would be _Android Studio_ but with a modern operating 
-system (at least Windows 8, MacOS 10.14 or Linux 64bit) with at least 8 GB RAM you should work fine.
+system (at least Windows 8, MacOS 10.14 or Linux 64bit) with at least 8 GB RAM you should be fine.
 
 ## Tools
 There aren't many tools necessary, which makes this part easy. Either you install _Java_, _Gradle_, 
@@ -34,6 +34,9 @@ If you want to test the newest features you can install the _Canary build_ or th
 
 ### Installing Git
 
+
 ## Helpful Guides
 
-## Keeping up-to-date with the Android World
+## Resources
+
+## Keeping up to date with the Android World
