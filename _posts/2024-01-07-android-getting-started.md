@@ -77,7 +77,7 @@ The best way to start your development journey is by taking the official course
 [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) from Google.
 It covers the central topics like creating your first app, building UI with the new established framework Compose,
 learning Kotlin as the main programming language for Android, accessing the Internet and managing SQL databases. 
-The code labs also aid you with the Android documentation.
+These code labs also aid you with the Android documentation.
 
 ### Next Steps
 There are several guides that can help you harness your skills:
