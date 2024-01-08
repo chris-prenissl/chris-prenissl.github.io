@@ -31,8 +31,8 @@ My goal is to make exceptional mobile Apps and help with everything related to D
  💬Teamwork: Scrum, multi professional team
 
 #### 🎓 Education
-- Nurse
 - Bachelor's Degree in Computer Science
+- Nurse
 
 Please feel free to contact me anytime if you want to get in touch:)
 
