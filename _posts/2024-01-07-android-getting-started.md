@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Android Development"
 date: 2024-01-08 11:19:00 +0100
-categories: [Android, Guide]
+categories: [Android]
 tags: [android, guide, learning, setup, programming]
 ---
 

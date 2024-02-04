@@ -1,7 +1,7 @@
 ---
 title: "Create a blog for free with Jekyll and Github Pages"
 date: 2024-01-28 16:14:00 +0100
-categories: [Web, Guide]
+categories: [Web]
 tags: [jekyll, ruby, static, site, generator, github, pages, guide, learning, setup, programming]
 ---
 
