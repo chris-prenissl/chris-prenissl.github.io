@@ -22,7 +22,7 @@ is still evolving.
 
 The market share for Android still beats the only competitor Apple.
 
-![Market Share Mobile Operating Systems](/assets/img/2024-01-7-android-getting-started/StatCounter-os_combined-ww-monthly-202212-202312-2.png){: w="700" h="400" }
+![Market Share Mobile Operating Systems](https://chris-prenissl.github.io/assets/img/2024-01-7-android-getting-started/StatCounter-os_combined-ww-monthly-202212-202312-2.png){: w="700" h="400" }
 
 __Market Share of Mobile Operating Systems (https://gs.statcounter.com/os-market-share/mobile/worldwide)__
 
