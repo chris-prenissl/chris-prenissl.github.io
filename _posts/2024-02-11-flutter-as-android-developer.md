@@ -185,3 +185,8 @@ Accessing memory of Isolates is limited. You can only send messages between Isol
 the owning Isolate.
 
 ## Final thoughts
+I would highly recommend every Android Developer to at least checkout Flutter. When you have solid knowledge about Android
+you will find an easy entry to Flutter and evaluate the framework for your needs. You can easily create multi-platform
+apps that have access to native code via protobuf defined interfaces (A topic that I didn't cover. 
+This could help: https://protobuf.dev/getting-started/darttutorial/). 
+Even though you have to learn a new language the Flutter documentation and guides make it really easy to get started. 
