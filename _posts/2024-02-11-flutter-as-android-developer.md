@@ -1,6 +1,6 @@
 ---
 title: "Developing for Flutter as an Android Developer"
-date: 2024-03-23 16:35:00 +0100
+date: 2024-03-23 17:09:00 +0100
 categories: [Flutter]
 tags: [flutter, development, programming]
 ---
