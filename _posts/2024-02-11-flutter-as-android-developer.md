@@ -1,6 +1,6 @@
 ---
 title: "Developing for Flutter as an Android Developer"
-date: 2024-02-18 18:00:00 +0100
+date: 2024-03-23 16:35:00 +0100
 categories: [Flutter]
 tags: [flutter, development, programming]
 ---
@@ -21,16 +21,16 @@ to instantly reload the current view or the app on device after code change, and
 The first thing I instantly liked was the JIT features like *Hot Reload* for loading code changes and reloading 
 the current state and *Hot Restart*, which is the same as Hot Reload but restarts the app and therefore the app's state is lost.
 
-The deployment to the *Dart VM* which is used to run the Flutter code takes much less time than recompiling native code.
-Since Flutter also can use native code, there is a reason to recompile native code and redeploy the app when changed.
+The deployment to the *Dart VM* which is used to run the Flutter code takes significantly less time than recompiling code for your platform.
 You can also find other cases where the *Hot Reload* / *Hot Restart* won't succeed under 
 _[Hot Reload](https://docs.flutter.dev/tools/hot-reload)_.
-Since newer Android Studio Versions you can preview your Compose Views more easy on different screen sizes at once
- _([Compose Previews](https://developer.android.com/jetpack/compose/tooling/previews))_. On Flutter you have to use the
- package device_preview on an actual device. 
- Since Android Studio Giraffe you can use _[LiveEdit](https://developer.android.com/jetpack/compose/tooling/iterative-development#live-edit)_
- to recompile your UI but only for Compose 1.3 (more limitations apply). In Flutter Hot reload was there at the beginning and
- and is not limited to the UI.
+Previewing your Widgets on different screen sizes and layouts in your Inspector is still a missing feature for Flutter as of my knowledge. 
+There is the package device_preview so you can compare the layout on many different devices but only when deployed. 
+In newer Android Studio Versions you can preview your Compose Views more easily on different screen sizes at once
+ _([Compose Previews](https://developer.android.com/jetpack/compose/tooling/previews))_. 
+ Since Android Studio Giraffe you can also use _[LiveEdit](https://developer.android.com/jetpack/compose/tooling/iterative-development#live-edit)_
+ to recompile your UI but only for Compose 1.3 or newer (more limitations apply). There Flutter has an advantage with Hot reload which 
+ was there at the beginning and and is not limited to the UI.
 
 As a Kotlin Developer it didn't take much time to understand the language features and syntax of *Dart*. Some parts like 
 double colons at the end of the line and function declarations felt like C/C++. Other parts like dynamic types and extensions
@@ -40,21 +40,26 @@ every type of programmer who is new to Flutter, so there is also a
 [Guide for Android Developer](https://docs.flutter.dev/get-started/flutter-for/android-devs)_ and other backgrounds, so you can 
 translate your knowledge from other languages much faster.
 
-## UI - Everything is a Widget (until it's not)
+## App Architecture
+There are many design patterns for software architecture in mobile app development. All serve different philosophies and
+styles. This part will not cover details on how to accomplish the patterns in Flutter but should give an overview on
+features of Dart and Flutter that fulfill needs in design.
+
+### UI - Everything is a Widget (until it's not)
 If you are familiar to declarative frameworks like *Swift UI* or *Jetpack Compose* than you should have a quick start
 with the *Widget* Structure of Flutter code. 
 
 Most UI elements of a Flutter app are nested Widgets. A so called *Widget Tree* defines the Layout, painting of the canvas and
 how user interactions are handled. In the _[Widget Catalog](https://docs.flutter.dev/ui/widgets)_ you can find a widget for your use-case.
 
-There are two kinds of Widgets in Flutter (_[Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)_):
-When a widget won't change or should not control the state itself, you can use a *StatelessWidget*.
+There are two kinds of _[Widgets](https://api.flutter.dev/flutter/widgets/Widget-class.html)_ in Flutter:
+When a Widget won't change or should not control the state itself, you can use a *StatelessWidget*.
 When you want Flutter to manage state changes of your UI you can use a *StatefulWidget*.
 Setting a state within a *StatefulWidget* is as easy as to call *setState* in a UI method.
 
 You not only declare UI in your Widget but also provide dependencies like repositories or models for example with the famous *BLoC* 
 package. Settings or navigation routes can also be provided within Widgets. Most of the time you can consume these configurations 
-via the context parameter in the current Widget. All of this seems similar to Jetpack Compose on Android, but when it comes to the layout,
+via the context parameter in the current Widget. All of this seems similar to *Jetpack Compose* on Android, but when it comes to the layout,
 there are some differences: You would use modifiers in Compose to control position and size, when for most cases in Flutter you would
 use another Widget as parent of your component you want to modify.
 
@@ -90,16 +95,11 @@ where you should take care of code that is not part of the composition (See _[Si
 So *Widgets* are basically classes that contain code for composing the UI (with passing references) and should be designed for 
 fast execution. Different logic should be handled elsewhere.
 
-## App Architecture
-There are many design patterns for software architecture in mobile app development. All serve different philosophies and
-styles. This part will not cover details on how to accomplish the patterns in Flutter but should give an overview on
-features of Dart and Flutter that fulfill needs in design.
-
 ### Object Orientation (OOP)
-Dart is an object oriented, type safe, sound null safe language, that also provide a dynamic type that can be checked for a type during 
-runtime when flexibility is needed _([Dart: Overview - Language](https://dart.dev/overview#language))_.
+Dart is an object oriented, type safe, sound null safe language, that also provide a dynamic type when flexibility is needed
+_([Dart: Overview - Language](https://dart.dev/overview#language))_.
 Dart also supports Generics.
-Some features and extensions like Reflections can be added from [pub.dev](https://pub.dev) the official package repository managed by Google.
+Some features and extensions like Reflections need to be added from [pub.dev](https://pub.dev) the official package repository managed by Google.
 
 ### Dependency Injection
 The Flutter framework is by design very thin and has limited support for dependency injection by default.
@@ -152,10 +152,10 @@ class TestRepositoryImpl extends TestRepository {
 The Flutter team recommends to use the main isolate (basically a representation of the main thread) for most code.
 If the execution needs more time e.g. when accessing an API, it is recommended to call code asynchronous.
 
-A function needs to return a _Future_ of type T.
+A function needs to return a _Future_ of type T
 to make it callable in an asynchronous way. When you need to wait for the result, you can use the _await_ keyword.
 This can only happen when the code lives in a scope that is prepended with the _async_ keyword and returns a _Future_.
-This is similar to using _async_ builder as one way of creating _Coroutines_ with Kotlin described in _[Concurrency](https://kotlinlang.org/docs/coroutines-and-channels.html#concurrency)_.
+This is similar to using _async_ builder as one way of creating Kotlin _Coroutines_ described in _[Concurrency](https://kotlinlang.org/docs/coroutines-and-channels.html#concurrency)_.
 
 The _Future_ class serves as a promise on an return type T when the execution was successful.
 
@@ -178,15 +178,16 @@ Future<void> main() async {
 
 ### Concurrency and Multithreading
 When there are CPU or IO heavy tasks that can't run in smaller junks with async/await on the main isolate 
-(the default isolate your code lives in) and would overshoot the frame gap, the UI stutters.
+(the default isolate your code lives in) and therefor would overshoot the frame gap the UI stutters.
 In Dart you can create a new separate _[Isolate](https://docs.flutter.dev/perf/isolates)_ independent from your starting code. 
 When you want to have communication between Isolates you can define ports and listen on them.
-Accessing memory of Isolates is limited. You can only send messages between Isolates and memory can only can be changed in
+Accessing memory of Isolates is limited. You can only send messages between Isolates and memory can only be changed in
 the owning Isolate.
 
-## Final thoughts
-I would highly recommend every Android Developer to at least checkout Flutter. When you have solid knowledge about Android
-you will find an easy entry to Flutter and evaluate the framework for your needs. You can easily create multi-platform
-apps that have access to native code via protobuf defined interfaces (A topic that I didn't cover. 
-This could help: https://protobuf.dev/getting-started/darttutorial/). 
-Even though you have to learn a new language the Flutter documentation and guides make it really easy to get started. 
+## Final Thoughts
+Even though you have to learn a new language, the Flutter documentation and guides make it really easy to get started.
+As an Android Developer you have a solid foundation which gives an easy entry and you can rely on solid packages. 
+You also have access to native code via protobuf defined interfaces (A topic that I didn't cover here https://protobuf.dev/getting-started/darttutorial/) 
+so you can use your Kotlin packages to access specific sensors. 
+So overall I highly recommend to checkout Flutter when you plan on deploying an app for more than one platform or you
+have a short (time) budget, since _Hot Reload/Refresh_ provides the basis for fast iterations.
