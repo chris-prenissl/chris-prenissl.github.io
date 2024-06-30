@@ -1,6 +1,6 @@
 # Chris Codes Blog
 
-This is code base for my personal blog based on the awesome work of cotes.
+This is code base for my personal blog based on the awesome work of cotes blog templates.
 
 ## Chirpy License
 
